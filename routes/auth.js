@@ -44,12 +44,12 @@ router.post(
         }
       };
 
-      // jwt.sign(
-      //   payload,
-      //   process.env.JWT_SECRET,
       jwt.sign(
         payload,
-        process.env.SECRET,
+        process.env.JWT_SECRET,
+        // jwt.sign(
+        //   payload,
+        //   process.env.SECRET,
         {
           expiresIn: 36000
         },
