@@ -37,15 +37,7 @@ const GuestItem = ({ guest }) => {
       </div>
       <div class="card-body">
         <h2>{name}</h2>
-        <span
-          class={
-            "badge " +
-            (isconfirmed === True
-              ? "red"
-              
-              : "green")
-          }
-        >
+        <span class={"badge " + (vehtype === "Car" ? "red" : "green")}>
           {vehtype}
         </span>
         <div class="contact">
